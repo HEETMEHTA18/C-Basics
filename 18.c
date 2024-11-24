@@ -1,31 +1,30 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 int main() {
-    char names[5][50];   // 2d Array for store A Names Of 5 Students.
-    char temp[50];     
+    char names[5][50]; // for Take 5 names with space or without space
+    char temp[50]; // for bubble sort a temporary string
     int i, j;
-
- // Collect Five Students Names.
+    printf("Enter the names of %d students:\n", 5);
     for (i = 0; i < 5; i++) {
-        printf("Enter name %d: ", i + 1);
-        scanf("%s", names[i]); 
+        printf("Student %d: ", i + 1);
+        gets(names[i]); // take input of string with space or without space
     }
-// Sorting Process.
-    for (i = 0; i < 5 - 1; i++) {
-        for (j = 0; j < 5 - i - 1; j++) {
-            if (strcmp(names[j], names[j + 1]) > 0) {
-                // Swap names[j] and names[j + 1]
-                strcpy(temp, names[j]);
-                strcpy(names[j], names[j + 1]);
-                strcpy(names[j + 1], temp);
+    // following loops is the loop of bubble sort of names(strings) in ascending oredr
+    for (i = 0; i < 4; i++) {
+        for (j = i + 1; j < 5; j++) {
+            if (strcmp(names[i], names[j]) > 0) {
+                strcpy(temp, names[i]);
+                strcpy(names[i], names[j]);
+                strcpy(names[j], temp);
             }
         }
     }
-//Sorted list Of Name.
-    printf("\nSorted names:\n");
+    printf("\nSorted list of student names:\n");
     for (i = 0; i < 5; i++) {
         printf("%s\n", names[i]);
     }
-     printf("\n24CE049_HARSHIL");
+    printf("\n24CE055 --> Urval Kheni\n");
+
     return 0;
 }
+
