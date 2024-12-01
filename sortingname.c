@@ -23,7 +23,8 @@ int main() {
     for (i = 0; i < 5; i++) {
         printf("%s\n", names[i]);
     }
-    printf("\n24CE055 --> Urval Kheni\n");
+    printf(".......................................................\n");
+    printf("24CE064-HEET MEHTA");
 
     return 0;
 }
