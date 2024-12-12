@@ -1,0 +1,4 @@
+Hello, Guys!
+This is a test of file handling in C.
+A
+This text is appended using r+ mode!
