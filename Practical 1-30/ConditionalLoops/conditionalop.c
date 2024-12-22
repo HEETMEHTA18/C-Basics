@@ -1,5 +1,5 @@
 /* This is a program to Determine the grade of a student based on their marks 
-using the conditiona operator and display grade according to their marks. */
+using the conditional operator and display grade according to their marks. */
 #include<stdio.h>
 int main(){
     int marks;
