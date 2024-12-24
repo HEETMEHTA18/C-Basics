@@ -180,7 +180,7 @@ void dynamicMemoryExample() {
         printf("%d ", arr[i]);
 
     free(arr);
-    printf("\nMemory Freed!\n");
+    printf("\nMemory free!\n");
 }
 
 // File Handling

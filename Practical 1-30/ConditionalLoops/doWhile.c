@@ -7,6 +7,6 @@ int main(){
         i++;
         count++;
         printf("%d",count);
-    }while(i<10);
+    }while(-10);
     return 0;
 }
